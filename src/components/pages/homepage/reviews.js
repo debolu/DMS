@@ -4,7 +4,8 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 import data from "./data";
 
 function App() {
-  const [people, setpeople] = useState(data);
+  // const [people, setpeople] = useState(data);
+  const people = data;
   const [index, setIndex] = useState(0);
 
   useEffect (()=> {
