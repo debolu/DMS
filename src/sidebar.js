@@ -22,7 +22,7 @@ const { isSidebarOpen, closeSidebar } = useGlobalContext()
                   })}
     </ul>
 
-    <div className="socials-icons">
+    <div className="socials" style={{margin: 'auto 10px'}}>
         <h3>Connect with us: </h3>
         <ul className='socials-icons'>
           {social.map((link) => {

@@ -188,7 +188,7 @@ a:not(:has(img, button)):hover {
 }
 .socials-icons {
   display: flex;
-  margin: auto;
+  margin: auto 20px;
   color: gray;
 }
 .socials-icons a {
@@ -394,8 +394,8 @@ article.nextSlide {
 }
 form input {
   padding: 10px;
-  border: transparent;
-  outline: transparent;
+  border-color: white;
+  background-color: transparent;
   border-radius: 5px;
   margin: 20px 10px;
   width: 200px;
@@ -418,13 +418,39 @@ form input {
   }
 }
 footer {
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.footer-logo {
+  margin: auto 20px;
 }
 figcaption {
   font-size: small;
   font-weight: 600;
+}
+.nav .links {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: auto 0;
+  font-size: small;
+}
+.navLinks li {
+  /* background-color: red; */
+  color: gray;
+  width: 100%;
+  padding: 5px 0;
+  margin: 3px 0;
+}
+.navLinks li a {
+  color: gray;
 }
 
 code {
