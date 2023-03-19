@@ -445,8 +445,8 @@ figcaption {
 .navLinks li {
   color: gray;
   width: 100%;
-  padding: 3px 1px;
-  margin: 3px 0px;
+  padding: 2px 1px;
+  margin: 1px 0px;
 }
 .navLinks li a {
   color: gray;
