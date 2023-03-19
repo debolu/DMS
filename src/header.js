@@ -2,19 +2,21 @@
 import { FaBars } from "react-icons/fa";
 import { useGlobalContext } from "./context";
 import logo from "./components/images/logo.png";
+import { links } from "./links-socials";
 
 const Header = () => {
     const { openSidebar } = useGlobalContext();
   return (
-    <div >
       <header className="App-header">
         <a href="/" className="logo"><img src={logo} alt="logo" /></a>
         <nav className="nav-bar">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/features">Features</a></li>
-                <li><a href="/our-company">Our Company</a></li>
+                {links.map((link) => {
+                  const { id, url, text } = link
+                  return (
+                  <li key={id} ><a href={url}>{text}</a></li>
+                  )
+                })}
             </ul>
         </nav>
         <div className="signin-div">
@@ -26,7 +28,6 @@ const Header = () => {
         <FaBars />
         </button>
       </header>
-    </div>
   );
 };
 

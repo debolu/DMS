@@ -46,9 +46,9 @@ p {
   }
 }
 body {
-  margin: 0;
+  width: 100%;
   padding: 0;
-  max-width: 100vw;
+  margin: 0;
 }
 main {
   background-color: #ffdbdb;
@@ -64,9 +64,9 @@ main {
   top: 0px;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   z-index: 10;
 }
 .logo {
@@ -91,11 +91,10 @@ li:has(a), a {
   color: black;
   list-style-type: none;
   text-decoration: none;
-  margin: 0px auto;
   padding: 10px;
   border-radius: 10px;
 }
-a:not(:has(img)):hover {
+a:not(:has(img, button)):hover {
   background-color: #fdb6b6;
 }
 .signin-div {
@@ -103,10 +102,15 @@ a:not(:has(img)):hover {
   width: fit-content;
 }
 .btn {
-  padding: 5px;
+  padding: 10px;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: #fdb6b6;
+  color: black;
 }
 
 .sidebar-toggle {
@@ -145,6 +149,20 @@ a:not(:has(img)):hover {
 }
 
 /* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  box-shadow: 0 1px 10px rgb(53, 36, 36);
+  transition: all 0.3s linear;
+  transform: translate(-100%);
+  z-index: 10;
+}
 .sidebar-header {
   display: flex;
   justify-content: space-between;
@@ -168,19 +186,13 @@ a:not(:has(img)):hover {
   color: rgb(146, 67, 67);
   background-color: #fdb6b6;
 }
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  background: white;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  row-gap: 1rem;
-  box-shadow: rgb(53, 36, 36);
-  transition: all 0.3s linear;
-  transform: translate(-100%);
-  z-index: 10;
+.socials-icons {
+  display: flex;
+  margin: auto;
+  color: gray;
+}
+.socials-icons a {
+  color: gray;
 }
 .show-sidebar {
   transform: translate(0);
@@ -230,7 +242,7 @@ Slider
 ===============*/
 
 .section {
-  width: 100vw;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.4);
 }
 @media screen and (min-width: 992px) {
@@ -364,7 +376,7 @@ article.nextSlide {
 .subscribe-div {
   background-image: url("./components/images/fx.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -404,6 +416,15 @@ form input {
   .money-section img {
     width: 30vw;
   }
+}
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+figcaption {
+  font-size: small;
+  font-weight: 600;
 }
 
 code {

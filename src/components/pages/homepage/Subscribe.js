@@ -28,7 +28,7 @@ const Subscribe = () => {
              <div className="subscribe-form">
                 <form onSubmit={(e) => handleAddSubscriber(e)} >
                     <input type="email" onChange={(e)=> handleInputChange(e) } name="email" defaultValue="" id="subscribe-field" placeholder="Enter your Email" />
-                    <button className="get-started" type="submit">Subscribe</button>
+                    <button className="get-started btn" type="submit">Subscribe</button>
                 </form>
              </div>
         </div>
