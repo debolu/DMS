@@ -19,9 +19,9 @@ const Login = () => {
                 <h6>Don't have an account? <Link to="/Sign-in" >Sign Up.</Link></h6>
                 <h4 style={{margin: "10px auto"}}>Or</h4>
                 {/* Buttons for login with apple and google. */}
-                <div>
-                    <button className="btn"><FaApple /> Sign in with Apple</button>
-                    <button className="btn"><FaGoogle /> Sign in with Google</button>
+                <div className="login-div">
+                    <button className="btn"><FaApple className="signin-icon" /> Sign in with Apple</button>
+                    <button className="btn"><FaGoogle className="signin-icon"/> Sign in with Google</button>
                 </div>
             </section>
         </main>
