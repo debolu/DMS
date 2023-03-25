@@ -1,8 +1,8 @@
-// import logo from "./logo.png";
 import { FaBars } from "react-icons/fa";
 import { useGlobalContext } from "./context";
 import logo from "./components/images/logo.png";
 import { links } from "./links-socials";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     const { openSidebar } = useGlobalContext();
@@ -14,14 +14,14 @@ const Header = () => {
                 {links.map((link) => {
                   const { id, url, text } = link
                   return (
-                  <li key={id} ><a href={url}>{text}</a></li>
+                  <li key={id} ><Link to={url}>{text}</Link></li>
                   )
                 })}
             </ul>
         </nav>
         <div className="signin-div">
-            <a href="/login"><button className="btn">Log In</button></a>
-            <a href="/signin"><button className="btn get-started">Get Started</button></a>
+            <NavLink to="/login"><button className="btn">Log In</button></NavLink>
+            <NavLink to="/sign-in"><button className="btn get-started">Get Started</button></NavLink>
         </div>
 
         <button className="sidebar-toggle" onClick={openSidebar}>

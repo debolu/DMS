@@ -1,0 +1,116 @@
+main.signin {
+    margin-top: 4%;
+    height: 800px;
+    display:flex;
+    padding: 10px;
+}
+.signin-section {
+    width: 50vw;
+    height: 100%;
+    margin:  auto;
+    padding: 0 20px;
+    background-color: white;
+}
+.signin-img-section, .login-img-section {
+    background-image: url("../../images/truth.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 50vw;
+}
+.signin-img-section h3, .login-img-section h3 {
+    margin: auto 30px;
+}
+.login-img-section {
+    background-image: url("../../images/fx.png");
+}
+.signin-form, .login-form {
+    text-align: center;
+}
+.login-form h3 {
+    margin-top: 20%;
+}
+.login-form .reg-form {
+    margin: 15% auto;
+}
+.signin-section h6 {
+    color: gray;
+    margin: 10px;
+}
+/* .profile-btn {
+    display: flex;
+    flex-wrap: wrap;
+} */
+.profile-btn button {
+    background-color: transparent;
+    color: #3B87B1;
+    padding: 5px;
+    width: 25%;
+    min-width: fit-content;
+    padding: 10px;
+    margin: 5px;
+    border: 1.69px solid #3B87B1;
+    outline: none;
+}
+.profile-btn button.active {
+    background-color: black;
+    color: white;
+}
+.reg-form input {
+    border: 1.69px solid #7B8D97;
+    width: 60%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 0;
+}
+.reg-form input:active {
+    outline-width: 3px;
+}
+.signup-btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin: 10px 10%;
+    margin-top: 20px;
+    width: 30%;
+    min-width: fit-content;
+}
+.signup-btn:hover {
+    background-color: #fdb6b6;
+    color: black;
+}
+@media screen and (max-width: 1000px) {
+    main.signin {
+        margin-top: 7%;
+    }
+}
+@media screen and (max-width: 690px) {
+    main.signin {
+        margin-top: 20%;
+    }
+    .signin-img-section, .login-img-section {
+        display: none;
+    }
+    .signin-section {
+        width: 80vw;
+        background-image: url("../../images/truth.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    .signin-section h6 {
+        color: white;
+    }
+    .reg-form input {
+        border: 1.69px solid white;
+    }
+}
+@media screen and (max-width: 450px) {
+    main.signin {
+        margin-top: 30%;
+    }
+}

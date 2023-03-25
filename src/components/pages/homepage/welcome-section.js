@@ -10,7 +10,7 @@ const Welcome = () => {
           <div>
             <h2>We Have <span className="blue-text">pride</span> in making the Essence of 
             business <span className="blue-text">Easier</span></h2>
-            <p >connecting business to their target audioence</p>
+            <p >connecting business to their target audience</p>
             <button className="get-started">Get Started</button>
           </div>
           <div className="mobile-pics">

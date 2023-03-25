@@ -1,3 +1,4 @@
+import './App.css';
 import Header from "./header";
 import Sidebar from "./sidebar";
 import Welcome from "./components/pages/homepage/welcome-section";

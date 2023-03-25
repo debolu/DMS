@@ -1,5 +1,6 @@
 import logo from "./components/images/logo.png";
 import { links, social } from "./links-socials";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,8 +11,8 @@ const Footer = () => {
           <figcaption>DERALZ MARKETING SOLUTION</figcaption>
         </div>
         <div style={{ margin: "20px 40px" }}>
-                  <a href="/login"><button className="btn">Log In</button></a>
-                  <a href="/signin"><button className="btn get-started">Get Started</button></a>
+        <NavLink to="/login"><button className="btn">Log In</button></NavLink>
+            <NavLink to="/sign-in"><button className="btn get-started">Get Started</button></NavLink>
         </div>
       </div> 
       <nav className="nav">
@@ -39,7 +40,7 @@ const Footer = () => {
           {social.map((link) => {
             const { id, url, icon } = link;
             return (
-              <li key={id}><a href={url}>{icon}</a></li>
+              <li key={id}><a target={'_blank'} rel="noreferrer" href={url}>{icon}</a></li>
             );
           })}
         </ul>
