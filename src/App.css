@@ -77,6 +77,7 @@ body {
 }
 nav {
   width: fit-content;
+  margin: auto;
 }
 nav ul {
   display: flex;
@@ -425,8 +426,6 @@ form input {
     width: 30vw;
   }
 }
-
-
 footer {
   background-color: #f69e9e;
   display: flex;
