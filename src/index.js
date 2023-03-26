@@ -3,6 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { AppProvider } from './context';
 // import { useGlobalContext } from "./context";
+import Header from "./header";
+import Sidebar from "./sidebar";
+import Footer from "./footer";
 import App from './App';
 import Signin from "./components/pages/signin/signin";
 import Login from "./components/pages/signin/login"
@@ -21,8 +24,9 @@ root.render(
           <Route path="/sign-in" Component={Signin} />
           <Route path="/login" Component={Login} />
         </Routes>
-      <App />
-       
+        <Header />
+        <Sidebar />
+        <Footer />
     </AppProvider>
     </BrowserRouter>
   </React.StrictMode>

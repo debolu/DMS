@@ -95,14 +95,19 @@ main.signin {
 .signin-icon {
     margin-right: 3px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     main.signin {
-        margin-top: 7%;
+        margin-top: 5.5%;
     }
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 950px) {
     main.signin {
-        margin-top: 20%;
+        margin-top: 6%;
+    }
+}
+@media screen and (max-width: 650px) {
+    main.signin {
+        margin-top: 10%;
     }
     .signin-img-section, .login-img-section {
         display: none;
@@ -123,6 +128,6 @@ main.signin {
 }
 @media screen and (max-width: 450px) {
     main.signin {
-        margin-top: 22%;
+        margin-top: 16%;
     }
 }
