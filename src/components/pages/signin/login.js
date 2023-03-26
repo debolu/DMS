@@ -1,6 +1,7 @@
 import { React } from "react";
 import { Link } from "react-router-dom";
-import { FaApple, FaGoogle } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
+import  { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
     return(
@@ -21,7 +22,7 @@ const Login = () => {
                 {/* Buttons for login with apple and google. */}
                 <div className="login-div">
                     <button className="btn"><FaApple className="signin-icon" /> Sign in with Apple</button>
-                    <button className="btn"><FaGoogle className="signin-icon"/> Sign in with Google</button>
+                    <button className="btn"><FcGoogle className="signin-icon"/> Sign in with Google</button>
                 </div>
             </section>
         </main>

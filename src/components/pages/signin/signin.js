@@ -3,7 +3,8 @@ import "./signin.css"
 import { React, useState } from "react";
 import signinForm from "./signinForm";
 import { Link } from "react-router-dom";
-import { FaApple, FaGoogle } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
+import  { FcGoogle } from "react-icons/fc";
 // import SignIn from "./google-signin";
 
 const Signin = () => {
@@ -48,7 +49,7 @@ const Signin = () => {
                 <div className="login-div">
                     {/* <SignIn /> */}
                     <button className="btn"><FaApple className=" signin-icon" /> Sign in with Apple</button>
-                    <button className="btn"><FaGoogle className=" signin-icon" /> Sign in with Google</button>
+                    <button className="btn"><FcGoogle className=" signin-icon" /> Sign in with Google</button>
                 </div>
             </section>
         </main>
